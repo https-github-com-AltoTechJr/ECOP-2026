@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1f72aa;
+  --secondary: #F9C62C;
+  --tertiary: #00E3B5;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+
+  --font-press_start: var(--font-press_start);
+  --font-inter: var(--font-inter);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-inter), sans-serif;
+  max-width: 1440px;
+  width: 100%;
+  margin: auto;
+}
