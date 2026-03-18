@@ -1,4 +1,6 @@
-export const ROUTES = [
+import { IRoutes } from "./types";
+
+export const ROUTES: IRoutes[] = [
     { name: 'Início', route: '/' },
     { name: 'Sobre', route: '/sobre' },
     { name: 'Programação', route: '/programacao' },
