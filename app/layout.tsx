@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, Inter } from "next/font/google";
+import { ReactNode } from "react";
 import "./globals.css";
 
 const pressStart = Press_Start_2P({
@@ -22,7 +23,7 @@ export const metadata: Metadata = {
 export default function RootLayout({
   children,
 }: Readonly<{
-  children: React.ReactNode;
+  children: ReactNode;
 }>) {
   return (
     <html lang="pt-br">
