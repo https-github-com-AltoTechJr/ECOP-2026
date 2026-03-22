@@ -1,6 +1,6 @@
 'use client'
 
-import Hr from "../../atoms/hr"
+import Title from "../../atoms/title"
 import { EmblaCarousel } from "../Carrosel"
 
 const ImagesSponsors = [
@@ -39,13 +39,9 @@ export default function Sponsors() {
       <div className="max-w-6xl mx-auto px-4 grid relative justify-items-center">
 
         {/* Título */}
-        <div className="relative text-center text-quinary max-w-[60rem]">
-          <h1 className="font-press_start text-[2rem] md:text-[1.5rem] font-bold tracking-widest
-          ">
-            CONECTE-SE COM QUEM FAZ ACONTECER
-          </h1>
+        <div className="relative text-center text-quinary max-w-240">
 
-          <Hr />
+          <Title text="CONECTE-SE COM QUEM FAZ ACONTECER" showHr />
 
           <p className="mt-10">
             Estas são as empresas que estão de olho no seu talento e{' '}
