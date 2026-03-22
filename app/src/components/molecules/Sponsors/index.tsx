@@ -1,5 +1,6 @@
 'use client'
 
+import Hr from "../../atoms/hr"
 import { EmblaCarousel } from "../Carrosel"
 
 const ImagesSponsors = [
@@ -44,9 +45,7 @@ export default function Sponsors() {
             CONECTE-SE COM QUEM FAZ ACONTECER
           </h1>
 
-          <div className="flex w-full justify-center items-center mt-4">
-            <span className="w-32 h-[6px] bg-tertiary"></span>
-          </div>
+          <Hr />
 
           <p className="mt-10">
             Estas são as empresas que estão de olho no seu talento e{' '}
