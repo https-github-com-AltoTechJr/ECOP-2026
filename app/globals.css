@@ -4,12 +4,16 @@
   --primary: #1f72aa;
   --secondary: #F9C62C;
   --tertiary: #00E3B5;
+  --quaternary: #D9FBF4;
+  --quinary: #214D59;
 }
 
 @theme {
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
   --color-tertiary: var(--tertiary);
+  --color-quaternary: var(--quaternary);
+  --color-quinary: var(--quinary);
 
   --font-press_start: var(--font-press_start);
   --font-inter: var(--font-inter);
