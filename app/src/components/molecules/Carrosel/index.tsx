@@ -57,14 +57,15 @@ export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps
         {/* SETA ESQUERDA */}
         {showArrows && (
           <>
-            <div onClick={() => emblaApi?.scrollPrev()}
-              className="absolute hidden sm:flex inset-y-0 -left-20 items-center justify-center z-10  cursor-pointer">
+            <div 
+              className="absolute hidden sm:flex inset-y-0 -left-20 items-center justify-center z-10 ">
               <Image
+                onClick={() => emblaApi?.scrollPrev()}
                 src='/arrow-left.svg'
                 alt='Arrow Left'
                 width={24}
                 height={24}
-                className={`h-12 sm:h-12 w-full rounded-[10px] object-contain`}
+                className={`h-12 sm:h-12 w-full rounded-[10px] object-contain cursor-pointer hover:scale-125`}
                 priority={false}
                 quality={65}
               />
@@ -100,15 +101,15 @@ export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps
         {/* SETA DIREITA */}
         {showArrows && (
           <div
-            onClick={() => emblaApi?.scrollNext()}
-            className="absolute hidden sm:flex inset-y-0 -right-20 items-center justify-center z-10 cursor-pointer"
+            className="absolute hidden sm:flex inset-y-0 -right-20 items-center justify-center z-10"
           >
             <Image
+              onClick={() => emblaApi?.scrollNext()}
               src='/arrow-right.svg'
               alt='Arrow Right'
               width={24}
               height={24}
-              className={`h-12 sm:h-12 w-full rounded-[10px] object-contain`}
+              className={`h-12 sm:h-12 w-full rounded-[10px] object-contain cursor-pointer hover:scale-125`}
               priority={false}
               quality={65}
             />
@@ -124,7 +125,7 @@ export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps
             key={index}
             onClick={() => emblaApi?.scrollTo(index)}
             className={`h-2 w-2 transition
-              ${index === selectedIndex ? 'bg-black' : 'bg-primary'}
+              ${index === selectedIndex ? 'bg-black' : 'bg-primary'} cursor-pointer
             `}
           />
         ))}
