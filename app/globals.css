@@ -6,6 +6,9 @@
   --tertiary: #00E3B5;
   --quaternary: #D9FBF4;
   --quinary: #214D59;
+
+  --light-blue: #56C5E4;
+  --stormy: #364153;
 }
 
 @keyframes popIn {
@@ -22,6 +25,31 @@
   }
 }
 
+@keyframes stack-sequence {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  /* sobe */
+  40% {
+    transform: translate(var(--x), var(--y));
+  }
+
+  /* fica empilhado */
+  55% {
+    transform: translate(var(--x), var(--y));
+  }
+
+  /* volta individual */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+.pixel-stack {
+  animation: stack-sequence 2s steps(3, end) infinite;
+}
+
 @theme {
   --color-primary: var(--primary);
   --color-secondary: var(--secondary);
@@ -29,13 +57,15 @@
   --color-quaternary: var(--quaternary);
   --color-quinary: var(--quinary);
 
+  --color-light-blue: var(--light-blue);
+  --color-stormy: var(--stormy);
+
   --font-press_start: var(--font-press_start);
   --font-inter: var(--font-inter);
 }
 
 body {
   font-family: var(--font-inter), sans-serif;
-  background-color: var(--color-primary); /* Pode remover */
   max-width: 1440px;
   width: 100%;
   margin: auto;
