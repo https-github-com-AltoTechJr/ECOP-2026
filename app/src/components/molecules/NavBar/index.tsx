@@ -4,13 +4,21 @@ import { ROUTES } from "@/app/lib/constants";
 import Image from "next/image";
 import Link from "next/link"
 import { usePathname } from "next/navigation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { MdPlayArrow } from "react-icons/md";
 import { VscClose } from "react-icons/vsc";
 
 export default function NavBar() {
     const [ isModal, setIsModal ] = useState<boolean>(false)
     const pathname = usePathname()
+
+    useEffect(() => {
+        document.body.style.overflow = isModal ? "hidden" : "auto"
+
+        return () => {
+            document.body.style.overflow = "auto"
+        }
+    }, [isModal])
 
   return (
     <header className="fixed top-0 left-0 w-full flex justify-center">
@@ -90,7 +98,6 @@ export default function NavBar() {
 
                 {/* Container */}
                 <div 
-                onClick={() => setIsModal(false)}
                 style={{animation: 'popIn 0.25s ease forwards'}} 
                 className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center z-50 ">
                 
@@ -99,7 +106,7 @@ export default function NavBar() {
                     className={`
                     relative
                     w-[85%] max-w-md
-                    bg-primary
+                    bg-primary bg-[url('/Scene.png')] object-contain
                     border-4 border-secondary
                     shadow-[6px_6px_0_#000]
                     p-6
@@ -130,7 +137,7 @@ export default function NavBar() {
                                     absolute left-0 top-1/2 -translate-y-1/2
                                     ${pathname === el.route ? 'text-yellow-400' : 'opacity-0'}
                                     `}>
-                                        <MdPlayArrow className="h-3.5 w-4.5" />
+                                        <MdPlayArrow className="h-3.5 w-4.5 text-bold" />
                                     </span>
 
                                     <Link
