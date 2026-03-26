@@ -119,7 +119,7 @@ export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps
       </div>
 
       {/* DOTS */}
-      <div className="flex relative -top-10 justify-center items-center gap-2 flex-wrap max-w-[90%]">
+      <div className="flex relative -top-26 sm:-top-10 justify-center items-center gap-2 flex-wrap max-w-[90%]">
         {images?.map((_, index) => (
           <button
             key={index}
