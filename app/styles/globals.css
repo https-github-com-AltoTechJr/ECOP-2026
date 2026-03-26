@@ -9,6 +9,7 @@
 
   --light-blue: #56C5E4;
   --stormy: #364153;
+  --dark-yellow: #C59D23;
 }
 
 @keyframes popIn {
@@ -16,9 +17,11 @@
     opacity: 0;
     transform: scale(0.8);
   }
+
   70% {
     transform: scale(1.05);
   }
+
   100% {
     opacity: 1;
     transform: scale(1);
@@ -59,14 +62,7 @@
 
   --color-light-blue: var(--light-blue);
   --color-stormy: var(--stormy);
-
+  --color-dark-yellow: var(--dark-yellow);
   --font-press_start: var(--font-press_start);
   --font-inter: var(--font-inter);
-}
-
-body {
-  font-family: var(--font-inter), sans-serif;
-  max-width: 1440px;
-  width: 100%;
-  margin: auto;
 }

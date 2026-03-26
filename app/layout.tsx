@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Press_Start_2P, Inter } from "next/font/google";
 import { ReactNode } from "react";
-import "./globals.css";
+import "./styles/globals.css";
 
 const pressStart = Press_Start_2P({
   variable: "--font-press_start",
@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${pressStart.variable} ${inter.variable} antialiased`}
+        className={`${pressStart.variable} ${inter.className} m-auto w-full max-w-360 antialiased`}
       >
         {children}
       </body>
