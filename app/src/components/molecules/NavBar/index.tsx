@@ -13,7 +13,7 @@ export default function NavBar() {
     const pathname = usePathname()
 
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-center">
+    <header className="fixed top-0 left-0 w-full flex justify-center z-10">
         <nav className="flex justify-between items-center w-full bg-white pt-4 pb-4 pl-2 md:pl-8 pr-2 md:pr-8">
             <Image 
             className="h-12 w-32 sm:h-16 sm:w-40 object-contain"

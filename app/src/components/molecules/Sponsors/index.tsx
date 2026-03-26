@@ -1,6 +1,6 @@
 'use client'
 
-import Title from "../../atoms/title"
+import Title from "../../atoms/Title"
 import { EmblaCarousel } from "../Carrosel"
 
 const ImagesSponsors = [
@@ -53,16 +53,6 @@ export default function Sponsors() {
 
         {/* Cards */}
         <EmblaCarousel images={ImagesSponsors} showArrows={true} />
-
-        {/* YELLOW BLOCKS */}
-        {/* <div className="absolute bottom-1 md:-bottom-[20px] left-3 md:left-[6.4rem] grid grid-cols-3"> 
-          <div className="col-span-3 flex justify-center"> 
-            <div className="w-10 md:w-10 h-10 md:h-10 bg-yellow-400"></div> 
-          </div> 
-          <div className=" w-10 md:w-10 h-10 md:h-10 bg-yellow-400"></div> 
-          <div className="w-10 md:w-10 h-10 md:h-10 bg-yellow-200"></div> 
-          <div className="w-10 md:w-10 h-10 md:h-10 bg-yellow-400"></div> 
-        </div> */}
       </div>
     </section>
   )
