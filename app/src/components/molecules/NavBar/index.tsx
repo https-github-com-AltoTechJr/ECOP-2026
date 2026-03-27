@@ -21,10 +21,10 @@ export default function NavBar() {
     }, [isModal])
 
   return (
-    <header className="fixed top-0 left-0 w-full flex justify-center z-10">
+    <header className="fixed top-0 left-0 w-full flex justify-center z-20">
         <nav className="flex justify-between items-center w-full bg-white pt-4 pb-4 pl-2 md:pl-8 pr-2 md:pr-8">
             <Image 
-            className="h-12 w-32 sm:h-16 sm:w-40 object-contain"
+            className="h-12 w-24 sm:h-16 sm:w-26 object-contain"
             src='/Logo.svg'
             alt="Logo"
             height={100}
@@ -46,9 +46,9 @@ export default function NavBar() {
                 ))}
             </ul>
 
-            <div className="hidden md:flex w-full md:w-32 justify-center items-center gap-2">
+            <div className="flex w-full md:w-32 justify-end md:justify-center items-center gap-2 mr-5 md:mr-0">
                 <Image 
-                className="w-6 md:w-8 object-contain animate-bounce"
+                className="w-6 md:w-6 object-contain animate-bounce"
                 style={{ animationDelay: '0s' }}
                 src='/heart.svg'
                 alt="heart"
@@ -58,7 +58,7 @@ export default function NavBar() {
                 />
 
                 <Image 
-                className="w-6 md:w-8 object-contain animate-bounce"
+                className="w-6 md:w-6 object-contain animate-bounce"
                 style={{ animationDelay: '0.2s' }}
                 src='/heart.svg'
                 alt="heart"
@@ -68,7 +68,7 @@ export default function NavBar() {
                 />
 
                 <Image 
-                className="w-6 md:w-8 object-contain animate-bounce"
+                className="w-6 md:w-6 object-contain animate-bounce"
                 style={{ animationDelay: '0.4s' }}
                 src='/heart.svg'
                 alt="heart"
@@ -79,8 +79,8 @@ export default function NavBar() {
             </div>
 
             <Image 
-            className="w-6 md:w-8 md:hidden object-contain"
-            src='/heart.svg'
+            className="w-10 md:hidden object-contain"
+            src='/menu.svg'
             alt="Vercel"
             height={100}
             width={100}
