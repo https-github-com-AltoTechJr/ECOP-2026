@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@import "@heroui/styles";
+
+:root {
+  --primary: #1f72aa;
+  --secondary: #F9C62C;
+  --tertiary: #00E3B5;
+  --quaternary: #D9FBF4;
+  --quinary: #214D59;
+
+  --light-blue: #56C5E4;
+  --stormy: #364153;
+  --dark-yellow: #C59D23;
+}
+
+@keyframes popIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+
+  70% {
+    transform: scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes stack-sequence {
+  0% {
+    transform: translate(0, 0);
+  }
+
+  /* sobe */
+  40% {
+    transform: translate(var(--x), var(--y));
+  }
+
+  /* fica empilhado */
+  55% {
+    transform: translate(var(--x), var(--y));
+  }
+
+  /* volta individual */
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+.cloud-drift {
+  animation-name: cloud-drift;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
+@layer utilities {
+  .text-pixel-outline {
+    text-shadow:
+      2px 0 0 #1f3b4d,
+      -2px 0 0 #1f3b4d,
+      0 2px 0 #1f3b4d,
+      0 -2px 0 #1f3b4d,
+      2px 2px 0 #1f3b4d,
+      -2px 2px 0 #1f3b4d,
+      2px -2px 0 #1f3b4d,
+      -2px -2px 0 #1f3b4d;
+  }
+
+  .text-pixel-outline-sm {
+    text-shadow:
+      1px 0 0 #1f3b4d,
+      -1px 0 0 #1f3b4d,
+      0 1px 0 #1f3b4d,
+      0 -1px 0 #1f3b4d,
+      1px 1px 0 #1f3b4d,
+      -1px 1px 0 #1f3b4d,
+      1px -1px 0 #1f3b4d,
+      -1px -1px 0 #1f3b4d;
+  }
+}
+
+.pixel-stack {
+  animation: stack-sequence 2s steps(3, end) infinite;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-tertiary: var(--tertiary);
+  --color-quaternary: var(--quaternary);
+  --color-quinary: var(--quinary);
+
+  --color-light-blue: var(--light-blue);
+  --color-stormy: var(--stormy);
+  --color-dark-yellow: var(--dark-yellow);
+  --font-press_start: var(--font-press_start);
+  --font-inter: var(--font-inter);
+}
