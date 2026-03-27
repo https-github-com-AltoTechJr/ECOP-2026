@@ -17,7 +17,7 @@ const Hero: React.FC = () => {
                 className="object-cover object-center"
             />
 
-            <div className="relative z-20 flex flex-col items-center gap-10 px-4 max-w-4xl uppercase text-wrap">
+            <div className="relative z-15 flex flex-col items-center gap-10 px-4 max-w-4xl uppercase text-wrap">
                 <h2 className="lg:text-2xl text-black/65">Suba de nível na sua jornada tech</h2>
                 <h1 className="text-2xl lg:text-6xl text-white font-bold">Encontro de Computação do Oeste Potiguar</h1>
                 <Button variant="default" size="lg" className="cursor-pointer uppercase" asChild>
