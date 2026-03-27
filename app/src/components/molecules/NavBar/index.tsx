@@ -101,18 +101,18 @@ export default function NavBar() {
                         {/* Overlay */}
                         <div
                             className="fixed inset-0 bg-black/50 z-40"
-                            onClick={() => setIsModal(false)}
+                            onClick={handleChangeIsModal}
                         />
 
                         {/* Container */}
                         <div
                             style={{ animation: 'popIn 0.25s ease forwards' }}
                             className="fixed top-0 left-0 w-screen h-screen flex items-center justify-center z-50"
-                            onClick={() => setIsModal(false)}
+                            onClick={handleChangeIsModal}
                         >
                             {/* Box */}
                             <div
-                                className="relative w-[85%] max-w-md bg-primary bg-[url('/Scene.png')] object-contain border border-secondary shadow-[6px_6px_0_#000] p-6 font-press_start"
+                                className="relative w-[85%] max-w-md bg-primary bg-[url('/Scene.jpeg')] object-contain border border-secondary shadow-[6px_6px_0_#000] p-6 font-press_start"
                                 onClick={(e) => e.stopPropagation()}
                             >
                                 <h2 className="text-white text-sm mb-6 text-center tracking-widest">
