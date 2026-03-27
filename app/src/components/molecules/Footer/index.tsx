@@ -4,7 +4,7 @@ import { Route } from "next";
 
 const Footer: React.FC = () => {
     return (
-        <footer className="bg-stormy text-white py-8 px-4 sm:px-16">
+        <footer className="bg-stormy text-white py-16 px-4 sm:px-16">
             <div className="container mx-auto">
                 <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start mb-6">
                     <div className="w-full text-left">
