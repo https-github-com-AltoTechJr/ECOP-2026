@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="pt-br">
       <body
-        className={`${pressStart.variable} ${inter.className} m-auto w-full max-w-360 antialiased`}
+        className={`${pressStart.variable} ${inter.className} antialiased`}
       >
         {children}
       </body>
