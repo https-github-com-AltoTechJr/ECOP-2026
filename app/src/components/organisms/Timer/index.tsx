@@ -44,7 +44,7 @@ export default function TimerSection() {
           <p className='pl-2 z-10'>15-17 de Maio, 2026</p>
         </div>
 
-        <div className='flex ml-4'>
+        <div className='flex md:ml-4'>
           <Image
             className="w-6 md:w-6 object-contain"
             src='/location.svg'
@@ -54,7 +54,7 @@ export default function TimerSection() {
             priority={false}
           />
 
-          <p className='pl-2'>Centro de Convenções Universitário</p>
+          <p className='pl-2 whitespace-nowrap'>Centro de Convenções Universitário</p>
         </div>
 
       </div>
