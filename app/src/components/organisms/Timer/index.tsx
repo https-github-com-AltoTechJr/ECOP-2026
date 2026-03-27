@@ -21,7 +21,7 @@ const Countdown = dynamic(
 
 export default function TimerSection() {
   return (
-    <div className="mx-auto w-full max-w-360 relative flex justify-center items-center flex-col bg-[linear-gradient(to_right,#00000039_1px,transparent_1px),linear-gradient(to_bottom,#00000030_1px,transparent_1px)] bg-size-[24px_24px]">
+    <div className="mx-auto p-12 md:p-20 w-full max-w-360 relative flex justify-center items-center flex-col bg-[linear-gradient(to_right,#00000039_1px,transparent_1px),linear-gradient(to_bottom,#00000030_1px,transparent_1px)] bg-size-[24px_24px]">
 
       <BlueBlocks />
 
