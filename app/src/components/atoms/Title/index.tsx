@@ -10,7 +10,7 @@ interface TitleTypes {
 export default function Title({ text, fontSize, fontSizeMd, showHr } : TitleTypes) {
   return (
     <>
-        <h2 className={`font-press_start ${fontSize ?? 'text-[2rem]'} ${fontSizeMd ?? 'md:text-[1.5rem]'} font-bold`}>{text}</h2>
+        <h2 className={`font-press_start ${fontSize ?? 'text-[2rem]'} ${fontSizeMd ?? 'md:text-[1.5rem]'} text-center font-bold`}>{text}</h2>
 
         {showHr && (
             <div className="flex w-full justify-center items-center mt-4">
