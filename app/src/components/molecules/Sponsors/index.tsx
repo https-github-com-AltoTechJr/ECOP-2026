@@ -28,12 +28,12 @@ const ImagesSponsors = [
     name: 'Github Campus Expert',
     link: '/sponsors/card-03.svg'
   },
-  
+
 ]
 
 export default function Sponsors() {
   return (
-    <section className="w-full py-20 bg-quaternary overflow-hidden">
+    <section className="mx-auto w-full max-w-360 py-20 bg-quaternary overflow-hidden">
 
       {/* Container */}
       <div className="max-w-6xl mx-auto px-4 grid relative justify-items-center">

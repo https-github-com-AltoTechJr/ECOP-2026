@@ -50,6 +50,23 @@
   }
 }
 
+@keyframes cloud-drift {
+  0% {
+    transform: translateX(100vw);
+  }
+
+  100% {
+    transform: translateX(-100vw);
+  }
+}
+
+.cloud-drift {
+  animation-name: cloud-drift;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  will-change: transform;
+}
+
 @layer utilities {
   .text-pixel-outline {
     text-shadow:

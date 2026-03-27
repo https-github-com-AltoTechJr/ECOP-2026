@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <>
       <NavBar />
-      <main className="m-auto w-full max-w-360">
+      <main className="space-y-30">
         <Hero />
         <TimerSection />
         <Sponsors />
