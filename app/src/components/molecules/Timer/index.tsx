@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react'
 import { useTimer } from 'react-timer-hook'
 
-export function Countdown() {
+export default function Countdown() {
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {

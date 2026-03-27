@@ -1,10 +1,23 @@
 'use client'
 
+import dynamic from 'next/dynamic'
 import BlueBlocks from '../../atoms/BlueBlocks'
 import Title from '../../atoms/Title'
 import YellowBlocks from '../../atoms/YellowBlocks'
-import { Countdown } from '../../molecules/Timer'
 import Image from "next/image"
+import { Spinner } from '@heroui/react';
+
+const Countdown = dynamic(
+  () => import('../../molecules/Timer'),
+  {
+    ssr: false,
+    loading: () => (
+      <div className="flex flex-col my-10 items-center gap-2">
+        <Spinner color="accent" size="xl" />
+      </div>
+    ),
+  }
+)
 
 export default function TimerSection() {
   return (

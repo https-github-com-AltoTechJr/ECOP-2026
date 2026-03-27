@@ -29,8 +29,8 @@ export default function RootLayout({
     <html lang="pt-br">
       <body
         className={`${pressStart.variable} ${inter.variable} antialiased`}
-      >
-        {children}
+      >  
+        {children} 
       </body>
     </html>
   );
