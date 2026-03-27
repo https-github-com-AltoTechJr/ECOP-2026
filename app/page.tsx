@@ -1,3 +1,4 @@
+import Footer from "./src/components/molecules/Footer";
 import Hero from "./src/components/molecules/Hero";
 import NavBar from "./src/components/molecules/NavBar";
 import Sponsors from "./src/components/molecules/Sponsors";
@@ -13,6 +14,7 @@ export default function Home() {
         <TimerSection />
         <Sponsors />
       </main>
+      <Footer />
     </>
 
   );
