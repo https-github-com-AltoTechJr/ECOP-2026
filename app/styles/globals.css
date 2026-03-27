@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import "@heroui/styles"; 
+@import "@heroui/styles";
 
 :root {
   --primary: #1f72aa;
@@ -47,6 +47,32 @@
   /* volta individual */
   100% {
     transform: translate(0, 0);
+  }
+}
+
+@layer utilities {
+  .text-pixel-outline {
+    text-shadow:
+      2px 0 0 #1f3b4d,
+      -2px 0 0 #1f3b4d,
+      0 2px 0 #1f3b4d,
+      0 -2px 0 #1f3b4d,
+      2px 2px 0 #1f3b4d,
+      -2px 2px 0 #1f3b4d,
+      2px -2px 0 #1f3b4d,
+      -2px -2px 0 #1f3b4d;
+  }
+
+  .text-pixel-outline-sm {
+    text-shadow:
+      1px 0 0 #1f3b4d,
+      -1px 0 0 #1f3b4d,
+      0 1px 0 #1f3b4d,
+      0 -1px 0 #1f3b4d,
+      1px 1px 0 #1f3b4d,
+      -1px 1px 0 #1f3b4d,
+      1px -1px 0 #1f3b4d,
+      -1px -1px 0 #1f3b4d;
   }
 }
 
