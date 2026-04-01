@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   pageExtensions: ["ts", "tsx"],
-  output: 'out',
+  output: 'export',
 
   poweredByHeader: false,
   compress: true,
