@@ -41,7 +41,7 @@ export default function TimerSection() {
             priority={false}
           />
 
-          <p className='pl-2 z-10'>15-17 de Maio, 2026</p>
+          <p className='pl-2 z-10'>18-20 de Maio, 2026</p>
         </div>
 
         <div className='flex md:ml-4'>
