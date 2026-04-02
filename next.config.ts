@@ -15,7 +15,6 @@ const nextConfig: NextConfig = {
   experimental: {
     typedEnv: true,
     authInterrupts: true,
-    mdxRs: true,
   },
 
   images: {
