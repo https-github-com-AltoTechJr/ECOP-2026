@@ -2,34 +2,7 @@
 
 import Title from "../../atoms/Title"
 import { EmblaCarousel } from "../Carrosel"
-
-const ImagesSponsors = [
-  {
-    name: 'Nosso Atacarejo',
-    link: '/sponsors/card-01.svg'
-  },
-  {
-    name: 'Instituto Sabiá',
-    link: '/sponsors/card-02.svg'
-  },
-  {
-    name: 'Github Campus Expert',
-    link: '/sponsors/card-03.svg'
-  },
-  {
-    name: 'Nosso Atacarejo',
-    link: '/sponsors/card-01.svg'
-  },
-  {
-    name: 'Instituto Sabiá',
-    link: '/sponsors/card-02.svg'
-  },
-  {
-    name: 'Github Campus Expert',
-    link: '/sponsors/card-03.svg'
-  },
-
-]
+import { ImagesSponsors } from "./constants"
 
 export default function Sponsors() {
   return (
