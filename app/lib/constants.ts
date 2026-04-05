@@ -10,7 +10,7 @@ const ROUTES: IRoutes[] = [
     { name: 'Artigos', route: '/artigos' }
     */
     { name: 'Sobre', route: '/' },
-    { name: 'Programação', route: '/' },
+    { name: 'Programação', route: '/programacao' },
     { name: 'Eventos', route: '/' },
     { name: 'Artigos', route: '/' }
 ]
