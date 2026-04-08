@@ -36,12 +36,13 @@ export default function Programacao() {
       imgBlock='/database.svg' 
       schedule={PROGRAMMATION19} />
 
-      <div className='h-[1400px] sm:h-[1100px] w-full absolute top-[50%] -z-10'>
+      <div className='h-350 sm:h-275 w-full absolute top-[50%] -z-10'>
         <Image
           src="/bg-top.webp"
           alt="Imagem de fundo da seção principal do site"
           fill
           priority
+          unoptimized
           quality={100}
           sizes="100vw"
           className="object-cover object-top"
