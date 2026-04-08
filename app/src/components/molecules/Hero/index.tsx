@@ -12,6 +12,7 @@ const Hero: React.FC = () => {
                 src="/scene-no-cloud.png"
                 alt="Imagem de fundo da seção principal do site"
                 fill
+                unoptimized
                 priority
                 quality={100}
                 sizes="100vw"
