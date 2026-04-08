@@ -11,6 +11,21 @@
   --light-blue: #56C5E4;
   --stormy: #364153;
   --dark-yellow: #C59D23;
+
+  --light-mint: #E6FCF8;
+  --light-sea-green: #00AA88;
+  --mint: #B0F6E8;
+  --neutral: #4A5565;
+
+  --ice-blue: #EFFBFF;
+  --alice-blue: #5FDBFD;
+  --cloud-blue: #CDF4FE;
+
+  --off-white: #FEF9EA;
+  --old-gold: #BB9521;
+  --blond: #FDEDBE;
+  --bright-gold: #F9C62C;
+
 }
 
 @keyframes popIn {
@@ -107,6 +122,21 @@
   --color-light-blue: var(--light-blue);
   --color-stormy: var(--stormy);
   --color-dark-yellow: var(--dark-yellow);
+
+  --color-light-mint: var(--light-mint);
+  --color-light-sea-green: var(--light-sea-green);
+  --color-mint: var(--mint);
+  --color-neutral: var(--neutral);
+
+  --color-ice-blue: var(--ice-blue);
+  --color-alice-blue: var(--alice-blue);
+  --color-cloud-blue: var(--cloud-blue);
+
+  --color-off-white: var(--off-white);
+  --color-old-gold: var(--old-gold);
+  --color-blond: var(--blond);
+  --color-bright-gold: var(--bright-gold);
+
   --font-press_start: var(--font-press_start);
   --font-inter: var(--font-inter);
 }

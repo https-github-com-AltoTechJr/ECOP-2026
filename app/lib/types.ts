@@ -5,4 +5,11 @@ interface IRoutes {
     route: Route;
 }
 
-export type { IRoutes }
+interface Schedule {
+    day: number,
+    time: string,
+    description: string,
+    local: string
+}
+
+export type { IRoutes, Schedule }

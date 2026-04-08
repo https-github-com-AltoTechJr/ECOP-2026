@@ -3,7 +3,7 @@
 import Image from "next/image";
 import Button from "../../atoms/Button";
 import Link from "next/link";
-import { clouds } from "./constants";
+import CloudsAnimation from "../../atoms/AnimationClouds";
 
 const Hero: React.FC = () => {
     return (
@@ -18,23 +18,8 @@ const Hero: React.FC = () => {
                 sizes="100vw"
                 className="object-cover object-center"
             />
-            <div className="absolute inset-0 z-10 pointer-events-none">
-                {clouds.map((cloud, index) => (
-                    <Image
-                        key={index}
-                        src={cloud.src}
-                        alt={cloud.alt}
-                        width={cloud.width}
-                        height={cloud.height}
-                        className="absolute cloud-drift [image-rendering:pixelated]"
-                        style={{
-                            top: cloud.top,
-                            animationDuration: cloud.duration,
-                            animationDelay: cloud.delay,
-                        }}
-                    />
-                ))}
-            </div>
+            
+            <CloudsAnimation />
 
             <div className="relative z-15 flex flex-col items-center gap-10 px-4 max-w-4xl uppercase text-wrap">
                 <h2 className="lg:text-2xl text-black/65">Suba de nível na sua jornada tech</h2>
