@@ -25,7 +25,7 @@ const Hero: React.FC = () => {
                 <h2 className="lg:text-2xl text-black/65">Suba de nível na sua jornada tech</h2>
                 <h1 className="text-2xl lg:text-6xl text-white font-bold text-pixel-outline">Encontro de Computação do Oeste Potiguar</h1>
                 <Button variant="default" size="lg" className="cursor-pointer uppercase" asChild>
-                    <Link href="/">
+                    <Link href="https://www.even3.com.br/viii-encontro-de-computacao-do-oeste-potiguar-ecop-725330/" target="_blank">
                         Inscreva-se
                     </Link>
                 </Button>

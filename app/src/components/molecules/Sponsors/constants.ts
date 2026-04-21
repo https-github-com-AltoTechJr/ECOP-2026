@@ -4,7 +4,11 @@ const ImagesSponsors = [
         link: '/sponsors/card-01.svg'
     },
     {
-        name: 'Github Campus Expert',
+        name: 'PROEC',
+        link: '/sponsors/card-02.svg'
+    },
+    {
+        name: 'UFERSA',
         link: '/sponsors/card-03.svg'
     },
     {
@@ -12,15 +16,11 @@ const ImagesSponsors = [
         link: '/sponsors/card-01.svg'
     },
     {
-        name: 'Github Campus Expert',
-        link: '/sponsors/card-03.svg'
+        name: 'PROEC',
+        link: '/sponsors/card-02.svg'
     },
     {
-        name: 'Nosso Atacarejo',
-        link: '/sponsors/card-01.svg'
-    },
-    {
-        name: 'Github Campus Expert',
+        name: 'UFERSA',
         link: '/sponsors/card-03.svg'
     },
 ]

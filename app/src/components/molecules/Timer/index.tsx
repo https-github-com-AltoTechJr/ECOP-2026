@@ -11,7 +11,7 @@ export default function Countdown() {
     setMounted(true)
   }, [])
 
-  const targetDate = new Date(2026, 4, 18, 0, 0, 0)
+  const targetDate = new Date(2026, 4, 19, 0, 0, 0)
 
   const { days, hours, minutes, seconds } = useTimer({
     expiryTimestamp: targetDate,
