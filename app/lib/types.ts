@@ -2,7 +2,7 @@ import { Route } from "next";
 
 interface IRoutes {
     name: string;
-    route: Route;
+    route: string;
 }
 
 interface Schedule {
