@@ -11,7 +11,6 @@ const nextConfig: NextConfig = {
     ignoreBuildErrors: false,
   },
 
-  typedRoutes: true,
   experimental: {
     typedEnv: true,
     authInterrupts: true,
