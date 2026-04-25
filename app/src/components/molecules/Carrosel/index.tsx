@@ -5,11 +5,13 @@ import Image from 'next/image'
 import useEmblaCarousel from 'embla-carousel-react'
 import Autoplay from 'embla-carousel-autoplay'
 import UseViewport from '@/app/hooks/UseViewport';
+import Link from 'next/link'
 
 interface TypeImages {
   name: string,
-  link: string
-} 
+  link: string,
+  img: string
+}
 
 interface EmblaCarouselProps {
   images: TypeImages[] | null
@@ -17,7 +19,7 @@ interface EmblaCarouselProps {
 }
 
 export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps) {
-  const viewport = UseViewport()
+  const viewport = UseViewport();
 
   const autoplay = useRef(
     Autoplay({
@@ -39,7 +41,7 @@ export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps
   useEffect(() => {
     if (!emblaApi) return
 
-    
+
     setScrollSnaps(emblaApi.scrollSnapList())
     setSelectedIndex(emblaApi.selectedScrollSnap())
 
@@ -57,7 +59,7 @@ export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps
         {/* SETA ESQUERDA */}
         {showArrows && (
           <>
-            <div 
+            <div
               className="absolute hidden sm:flex inset-y-0 -left-20 items-center justify-center z-10 ">
               <Image
                 onClick={() => emblaApi?.scrollPrev()}
@@ -75,24 +77,29 @@ export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps
 
         {/* EMBLA */}
         <div ref={emblaRef}
-           className="overflow-hidden">
+          className="overflow-hidden">
           <div className="flex mt-16">
             {images?.map((src, index) => (
               <div
                 key={index}
                 className="flex-[0_0_60.333%] sm:flex-[0_0_56.333%] md:flex-[0_0_53.333%] lg:flex-[0_0_30.333%] mr-10 gap-10 flex justify-center"
               >
-                <div>
+                <Link
+                  href={src.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <Image
-                    src={src.link}
+                    src={src.img}
                     alt={`Slide ${index + 1}`}
                     width={800}
                     height={288}
                     className={`h-50 sm:h-60 w-full rounded-[10px] object-contain`}
                     priority={index == 0}
                     quality={65}
+                    unoptimized
                   />
-                </div>
+                </Link>
               </div>
             ))}
           </div>

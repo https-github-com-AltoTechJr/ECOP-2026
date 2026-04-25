@@ -1,8 +1,16 @@
 import React from 'react'
 
-export default function YellowBlocks() {
+interface YellowBlocks {
+  left?: string,
+  leftMd?: string,
+
+  bottom?: string,
+  bottomMd?: string
+}
+
+export default function YellowBlocks({ left, leftMd, bottom, bottomMd } : YellowBlocks) {
   return (
-    <div className="absolute bottom-1 md:bottom-2 left-1 md:left-14 grid grid-cols-3">
+    <div className={`absolute ${bottom ?? 'bottom-1'} ${bottomMd ?? 'md:bottom-2'} ${left ?? 'left-1'} ${leftMd ?? 'md:left-14'} grid grid-cols-3`}>
       
       {/* topo */}
       <div className="col-span-3 flex justify-center">
