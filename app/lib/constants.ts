@@ -12,7 +12,7 @@ const ROUTES: IRoutes[] = [
     { name: 'Sobre', route: '/' },
     { name: 'Programação', route: '/programacao' },
     { name: 'Eventos', route: '/' },
-    { name: 'Artigos', route: '/' }
+    { name: 'Artigos', route: 'https://periodicos.ufersa.edu.br/index.php/ecop/about/submissions' }
 ]
 
 export { ROUTES }
