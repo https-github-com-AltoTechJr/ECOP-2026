@@ -1,27 +1,33 @@
 const ImagesSponsors = [
     {
         name: 'Nosso Atacarejo',
-        link: '/sponsors/card-01.svg'
+        img: '/sponsors/card-01.svg',
+        link: 'https://www.nossoatacarejo.com.br/'
     },
     {
         name: 'PROEC',
-        link: '/sponsors/card-02.svg'
+        img: '/sponsors/card-02.svg',
+        link: 'https://proec.ufersa.edu.br/'
     },
     {
         name: 'UFERSA',
-        link: '/sponsors/card-03.svg'
+        img: '/sponsors/card-03.svg',
+        link: 'https://ufersa.edu.br/'
     },
     {
         name: 'Nosso Atacarejo',
-        link: '/sponsors/card-01.svg'
+        img: '/sponsors/card-01.svg',
+        link: 'https://www.nossoatacarejo.com.br/'
     },
     {
         name: 'PROEC',
-        link: '/sponsors/card-02.svg'
+        img: '/sponsors/card-02.svg',
+        link: 'https://proec.ufersa.edu.br/'
     },
     {
         name: 'UFERSA',
-        link: '/sponsors/card-03.svg'
+        img: '/sponsors/card-03.svg',
+        link: 'https://ufersa.edu.br/'
     },
 ]
 
