@@ -19,12 +19,12 @@ export default function Programacao() {
       </div>
 
       <ProgramacaoCard
-        weekDay='SEXTA-FEIRA - 18/05'
+        weekDay='SEGUNDA-FEIRA - 18/05'
         imgBlock='/guard.svg'
         schedule={PROGRAMMATION18} />
 
       <ProgramacaoCard
-        weekDay='SÁBADO - 19/05'
+        weekDay='TERÇA-FEIRA - 19/05'
         borderColor='border-alice-blue'
         bgColor='bg-ice-blue'
         evenBg='bg-cloud-blue'
@@ -53,7 +53,7 @@ export default function Programacao() {
 
 
       <ProgramacaoCard
-        weekDay='DOMINGO - 20/05'
+        weekDay='QUARTA-FEIRA - 20/05'
         borderColor='border-old-gold'
         bgColor='bg-off-white'
         evenBg='bg-blond'

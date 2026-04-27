@@ -56,7 +56,7 @@ export default function ProgramacaoCard(
                 </div>
                 
                 <div className='w-full relative'>
-                    <h2 className={`ml-4 ${highlighted || 'text-tertiary'} font-press_start text-[1.2rem] sm:text-2xl`}>{weekDay || 'Dia - Data'}</h2>
+                    <h2 className={`ml-4 ${highlighted || 'text-tertiary'} font-press_start text-[1rem] sm:text-2xl`}>{weekDay || 'Dia - Data'}</h2>
                     <span className={`ml-4 absolute ${hrColor || 'bg-tertiary'} -bottom-1 h-1 w-full`}></span>
                 </div>
 
