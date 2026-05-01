@@ -18,7 +18,7 @@ export default function Sobre() {
         title='MÉDIA DE 600 INSCRIÇÕES POR EDIÇÃO!'
         description={
           <>
-            Com palestras, minicursos, mesas redondas, trabalhos científicos, olimpíada de programação, hackathon, salão empresarial, momentos culturais e jogos interativos, etc., tendo uma
+            Com palestras, minicursos, mesas redondas, trabalhos científicos e momentos culturais, o evento conta com uma
             {' '}
             <strong>
               ampla aceitação de discentes da UFERSA e de outras instituições da região e de estados vizinhos
