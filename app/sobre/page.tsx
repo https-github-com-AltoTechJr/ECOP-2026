@@ -5,6 +5,7 @@ import Title from '../src/components/atoms/Title'
 import YellowBlocks from '../src/components/atoms/YellowBlocks'
 import { EmblaCarousel } from '../src/components/molecules/Carrosel'
 import Footer from '../src/components/molecules/Footer'
+import HeroAbout from '../src/components/molecules/HeroAbout'
 import NavBar from '../src/components/molecules/NavBar'
 import ImageAndDescription from '../src/components/organisms/ImageAndDescription'
 

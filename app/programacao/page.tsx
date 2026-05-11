@@ -19,21 +19,21 @@ export default function Programacao() {
       </div>
 
       <ProgramacaoCard
-        weekDay='SEXTA-FEIRA - 18/05'
+        weekDay='SEGUNDA-FEIRA - 18/05'
         imgBlock='/guard.svg'
         schedule={PROGRAMMATION18} />
 
       <ProgramacaoCard
-        weekDay='SÁBADO - 19/05'
-        borderColor='border-alice-blue'
-        bgColor='bg-ice-blue'
-        evenBg='bg-cloud-blue'
-        highlighted='text-alice-blue'
-        hrColor='bg-alice-blue'
-        firstLeftBlockColor='bg-alice-blue'
-        sencondLeftBlockColor='bg-cloud-blue'
-        localBg='bg-alice-blue'
-        imgBlock='/database.svg'
+        weekDay='TERÇA-FEIRA - 19/05'
+        borderColor='border-old-gold'
+        bgColor='bg-off-white'
+        evenBg='bg-blond'
+        highlighted='text-bright-gold'
+        hrColor='bg-bright-gold'
+        firstLeftBlockColor='bg-bright-gold'
+        sencondLeftBlockColor='bg-blond'
+        localBg='bg-bright-gold'
+        imgBlock='/pendrive.svg'
         schedule={PROGRAMMATION19} />
 
       <div className='h-350 sm:h-275 w-full absolute top-[50%] -z-10'>
@@ -53,16 +53,16 @@ export default function Programacao() {
 
 
       <ProgramacaoCard
-        weekDay='DOMINGO - 20/05'
-        borderColor='border-old-gold'
-        bgColor='bg-off-white'
-        evenBg='bg-blond'
-        highlighted='text-bright-gold'
-        hrColor='bg-bright-gold'
-        firstLeftBlockColor='bg-bright-gold'
-        sencondLeftBlockColor='bg-blond'
-        localBg='bg-bright-gold'
-        imgBlock='/pendrive.svg'
+        weekDay='QUARTA-FEIRA - 20/05'
+        borderColor='border-alice-blue'
+        bgColor='bg-ice-blue'
+        evenBg='bg-cloud-blue'
+        highlighted='text-alice-blue'
+        hrColor='bg-alice-blue'
+        firstLeftBlockColor='bg-alice-blue'
+        sencondLeftBlockColor='bg-cloud-blue'
+        localBg='bg-alice-blue'
+        imgBlock='/database.svg'
         schedule={PROGRAMMATION20} />
 
       <Footer />
