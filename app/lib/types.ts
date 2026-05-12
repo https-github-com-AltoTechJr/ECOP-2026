@@ -1,5 +1,3 @@
-import { Route } from "next";
-
 interface IRoutes {
     name: string;
     route: string;
@@ -8,7 +6,8 @@ interface IRoutes {
 interface Schedule {
     day: number,
     time: string,
-    description: string,
+    title: string,
+    description?: string,
     local: string
 }
 
