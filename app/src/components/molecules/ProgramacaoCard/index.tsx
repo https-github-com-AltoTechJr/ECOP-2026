@@ -86,19 +86,19 @@ export default function ProgramacaoCard({
         {schedule.map((item, index) => (
           <div
             key={index}
-            className={`relative mt-8 sm:flex h-28 sm:h-16 w-full sm:items-center py-2 px-2 ${index % 2 === 0 ? evenBg || "bg-mint" : "bg-transparent"}`}
+            className={`mt-8 flex flex-col sm:flex-row sm:items-center py-2 px-2 ${index % 2 === 0 ? evenBg || "bg-mint" : "bg-transparent"}`}
           >
-            <span className="flex items-center gap-1 sm:text-nowrap sm:pr-2">
+            <span className="flex items-center gap-1 shrink-0 sm:text-nowrap sm:pr-2">
               <CiClock2 /> {item.time}
             </span>
-            <p className="w-full text-[.9rem] text-justify text-neutral px-4 sm:px-8">
+            <p className="flex-1 text-[.9rem] text-justify text-neutral px-4 sm:px-8 py-1">
               <span className="font-bold">{item.title}</span>
               {!!item.description && " - Convidado: "}
               <span className="font-light">{item.description}</span>
             </p>
-            <div className="absolute bottom-2 right-1 sm:flex sm:relative sm:bottom-0 sm:right-0 sm:justify-end">
+            <div className="flex justify-end shrink-0">
               <span
-                className={`${localBg || "bg-tertiary"} text-white text-[.8rem] text-center sm:text-nowrap p-1 sm:p-2`}
+                className={`${localBg || "bg-tertiary"} text-white text-[.8rem] text-center sm:text-nowrap p-1 w-44 sm:p-2`}
               >
                 {item.local}
               </span>
