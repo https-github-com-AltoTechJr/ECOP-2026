@@ -9,7 +9,7 @@ import Link from 'next/link'
 
 interface TypeImages {
   name: string,
-  link: string,
+  link?: string,
   img: string
 }
 
@@ -84,22 +84,35 @@ export function EmblaCarousel({ images, showArrows = false }: EmblaCarouselProps
                 key={index}
                 className="flex-[0_0_60.333%] sm:flex-[0_0_56.333%] md:flex-[0_0_53.333%] lg:flex-[0_0_30.333%] mr-10 gap-10 flex justify-center"
               >
-                <Link
-                  href={src.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                {src.link ? (
+                  <a
+                    href={src.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={src.img}
+                      alt={`Slide ${index + 1}`}
+                      width={800}
+                      height={288}
+                      className="h-50 sm:h-60 w-full rounded-[10px] object-contain"
+                      priority={index === 0}
+                      quality={65}
+                      unoptimized
+                    />
+                  </a>
+                ) : (
                   <Image
                     src={src.img}
                     alt={`Slide ${index + 1}`}
                     width={800}
                     height={288}
-                    className={`h-50 sm:h-60 w-full rounded-[10px] object-contain`}
-                    priority={index == 0}
+                    className="h-50 sm:h-60 w-full rounded-[10px] object-contain"
+                    priority={index === 0}
                     quality={65}
                     unoptimized
                   />
-                </Link>
+                )}
               </div>
             ))}
           </div>
