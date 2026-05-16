@@ -10,7 +10,7 @@ const CONTACT = {
     title: 'Contato',
     items: [
         { label: 'ecop@ufersa.edu.br', icon: <CgMail size={ICON_SIZE} /> },
-        { label: '(11) 1234-5678', icon: <PiPhone size={ICON_SIZE} /> },
+        { label: '(83) 99623-5337', icon: <PiPhone size={ICON_SIZE} /> },
         { label: 'Pau dos Ferros - RN, Brasil', icon: <BiLocationPlus size={ICON_SIZE} /> },
     ]
 }
@@ -18,10 +18,10 @@ const CONTACT = {
 const FAST_LINKS = {
     title: 'Links Rápidos',
     links: [
-        { label: 'Sobre o Evento', href: '/' },
-        { label: 'Palestras', href: '/' },
-        { label: 'Minicursos', href: '/' },
-        { label: 'Programação', href: '/' },
+        { label: 'Sobre o Evento', href: '/sobre' },
+        { label: 'Palestras', href: '/programacao' },
+        { label: 'Minicursos', href: '/programacao' },
+        { label: 'Programação', href: '/programacao' },
         { label: 'Patrocinadores', href: '/' },
     ]
 }
