@@ -1,14 +1,14 @@
 interface IRoutes {
-    name: string;
-    route: string;
+  name: string;
+  route: string;
 }
 
 interface Schedule {
-    day: number,
-    time: string,
-    title: string,
-    description?: string,
-    local: string
+  day: number;
+  time: string;
+  title: string;
+  description?: string;
+  local: string;
 }
 
-export type { IRoutes, Schedule }
+export type { IRoutes, Schedule };
