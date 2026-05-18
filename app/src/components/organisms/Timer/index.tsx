@@ -54,7 +54,7 @@ export default function TimerSection() {
             priority={false}
           />
 
-          <p className='pl-2 whitespace-nowrap'>Centro de Convenções Universitário</p>
+          <p className='pl-2 whitespace-nowrap'>Centro de Convivência</p>
         </div>
 
       </div>

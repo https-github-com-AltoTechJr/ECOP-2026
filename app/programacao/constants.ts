@@ -117,7 +117,7 @@ const PROGRAMMATION19: Schedule[] = [
     day: 19,
     time: "16:00 - 18:00",
     title: "Minicurso: Code, Commit, Push — Imersão Prática em Linux e Git",
-    description: "- Gustavo Nunes",
+    description: "- Gustavo Fontes",
     local: "LTI - Lab 2",
   },
   {
@@ -125,7 +125,8 @@ const PROGRAMMATION19: Schedule[] = [
     time: "16:00 - 18:00",
     title:
       "Minicurso: Algoritmos com o Scratch — Aprendendo a Programar Brincando",
-    description: "- Victor Hugo de Oliveira",
+    description:
+      "- Victor Hugo de Oliveira e Carlos Rubem Alves Fernandes da Silva",
     local: "Lab C&T - Lab 2",
   },
   {
@@ -152,7 +153,7 @@ const PROGRAMMATION20: Schedule[] = [
     time: "08:00 - 10:15",
     title:
       "Artigos Científicos: Sessão A — Aplicações de Inteligência Artificial em Saúde, Educação e Tecnologias Assistivas",
-    description: "Presidente da Sessão: Prof. Dr. Kennedy Reurison Lopes",
+    description: "- Presidente da Sessão: Prof. Dr. Kennedy Reurison Lopes",
     local: "Auditório do Administrativo",
   },
   {
@@ -160,7 +161,7 @@ const PROGRAMMATION20: Schedule[] = [
     time: "10:30 - 12:00",
     title:
       "Artigos Científicos: Sessão B — Sistemas inteligentes e Computação Aplicada",
-    description: "Presidente da Sessão: Prof. Dr. Kennedy Reurison Lopes",
+    description: "- Presidente da Sessão: Prof. Dr. Kennedy Reurison Lopes",
     local: "Auditório do Administrativo",
   },
   {
