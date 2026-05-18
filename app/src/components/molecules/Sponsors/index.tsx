@@ -6,7 +6,7 @@ import { ImagesSponsors } from "./constants"
 
 export default function Sponsors() {
   return (
-    <section className="mx-auto w-full max-w-360 py-20 bg-quaternary overflow-hidden">
+    <section className="mx-auto w-full max-w-360 py-20 bg-quaternary overflow-hidden" id="patrocinadores">
 
       {/* Container */}
       <div className="max-w-6xl mx-auto px-4 grid relative justify-items-center">

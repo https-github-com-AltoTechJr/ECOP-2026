@@ -62,7 +62,7 @@ export default function ProgramacaoCard({
 
           <div className="w-full relative">
             <h2
-              className={`ml-4 ${highlighted || "text-tertiary"} font-press_start text-[1rem] sm:text-2xl`}
+              className={`ml-4 ${highlighted || "text-tertiary"} font-press_start text-[1.1rem] sm:text-3xl`}
             >
               {weekDay || "Dia - Data"}
             </h2>
@@ -88,17 +88,17 @@ export default function ProgramacaoCard({
             key={index}
             className={`mt-8 flex flex-col sm:flex-row sm:items-center py-2 px-2 ${index % 2 === 0 ? evenBg || "bg-mint" : "bg-transparent"}`}
           >
-            <span className="flex items-center gap-1 shrink-0 sm:text-nowrap sm:pr-2">
+            <span className="flex items-center gap-1 shrink-0 sm:text-nowrap sm:pr-2 text-[0.95rem] font-medium text-neutral-800">
               <CiClock2 /> {item.time}
             </span>
-            <p className="flex-1 text-[.9rem] text-justify text-neutral px-4 sm:px-8 py-1">
-              <span className="font-bold">{item.title}</span>
-              {!!item.description && " - Convidado: "}
+            <p className="flex-1 text-[1rem] sm:text-[1.05rem] text-justify text-neutral px-4 sm:px-8 py-1">
+              <span className="font-bold">{item.title}</span>{" "}
               <span className="font-light">{item.description}</span>
             </p>
             <div className="flex justify-end shrink-0">
               <span
-                className={`${localBg || "bg-tertiary"} text-white text-[.8rem] text-center sm:text-nowrap p-1 w-44 sm:p-2`}
+                className={`${localBg || "bg-tertiary"} text-neutral-900 font-semibold text-[0.95rem] sm:text-[1rem] text-center p-1 max-w-48 sm:max-w-[16rem] sm:p-2 shadow-sm whitespace-normal wrap-break-word`}
+                title={item.local}
               >
                 {item.local}
               </span>
