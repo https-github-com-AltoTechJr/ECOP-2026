@@ -1,6 +1,7 @@
 import { BiLocationPlus } from "react-icons/bi";
 import { BsInstagram } from "react-icons/bs";
 import { CgMail } from "react-icons/cg";
+import { PiPhone } from "react-icons/pi";
 
 const ICON_SIZE = 24;
 
@@ -8,6 +9,7 @@ const CONTACT = {
   title: "Contato",
   items: [
     { label: "ecop@ufersa.edu.br", icon: <CgMail size={ICON_SIZE} /> },
+    { label: "(83) 99623-5337", icon: <PiPhone size={ICON_SIZE} /> },
     {
       label: "Pau dos Ferros - RN, Brasil",
       icon: <BiLocationPlus size={ICON_SIZE} />,
